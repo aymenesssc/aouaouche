@@ -1,0 +1,66 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Georgia', serif;
+}
+
+/* Full page container centered */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f4e3; /* light vintage background color */
+    padding: 20px;
+}
+
+/* Letter image style */
+.letter-wrapper {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+}
+
+.letter-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+/* Zoom effect on click */
+.letter-image:active {
+    transform: scale(2); /* Zoom in */
+    cursor: zoom-out;
+}
+
+/* Vintage-style button */
+.button-wrapper {
+    margin-top: 20px;
+}
+
+.vintage-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b08d57; /* Soft vintage gold */
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid #7c5a33;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vintage-button:hover {
+    background-color: #8c6b3b;
+    transform: scale(1.05);
+}
+
+.vintage-button:active {
+    transform: scale(0.95);
+}

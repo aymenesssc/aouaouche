@@ -1,0 +1,44 @@
+/* styles.css */
+* {
+    box-sizing: border-box; /* Include padding and border in total width and height */
+}
+
+html, body {
+    height: 100%; /* Ensure the body and html take up the full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.background-image {
+    background: url('Brown\ Vintage\ Aesthetic\ Scrapbook\ Thank\ You\ Letter\ \(1\).png') no-repeat center center; /* Sample image */
+    background-size: cover; /* Scale the image to cover the whole area */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    position: absolute; /* Position to fill the viewport */
+    top: 0;
+    left: 0;
+    text-decoration: none; /* Remove underline from link */
+    color: transparent; /* Hide text if any */
+    z-index: 1; /* Make sure the link is above any other content */
+    animation: beat 1s infinite; /* Apply beating animation */
+}
+
+/* Beating animation */
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        transform: scale(1.05); /* Scale up */
+    }
+}
+
+.background-image:hover {
+    opacity: 0.8; /* Optional: Add hover effect */
+}

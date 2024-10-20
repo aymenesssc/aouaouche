@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Dancing Script', cursive; /* Main font for body */
+    margin: 0;
+  padding: 0;
+  background-image: url('Brown\ Minimalist\ Abstract\ Instagram\ Story.png'); /* Replace with the path to your image */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Makes the background fixed during scroll */
+    color: #1a0303;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-family:'Dancing Script', cursive; /* Different font for the title */
+    font-size: 48px; /* Larger title size */
+    margin-bottom: 20px;
+    color: #0e0000;
+}
+
+.phrases-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px; /* Space between phrases */
+}
+
+.phrase {
+    border-radius: 22%; /* Makes the background round */
+    padding: 20px 20px; /* Vertical and horizontal padding */
+    font-size: 30px; /* Larger font size for the phrases */
+    width: min-content; /* Fixed width */
+    height: fit-content; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s; /* Animation effect */
+}
+
+/* Apply different pastel colors */
+.phrase:nth-child(1) { background-color: #FFB3BA; } /* Pastel Pink */
+.phrase:nth-child(2) { background-color: #FFDFBA; } /* Light Peach */
+.phrase:nth-child(3) { background-color: #FFFFBA; } /* Light Yellow */
+.phrase:nth-child(4) { background-color: #BAFFB3; } /* Light Green */
+.phrase:nth-child(5) { background-color: #B3E5FF; } /* Light Blue */
+.phrase:nth-child(6) { background-color: #FFC3D5; } /* Light Rose */
+.phrase:nth-child(7) { background-color: #B2B2FF; } /* Pastel Lavender */
+.phrase:nth-child(8) { background-color: #FFABAB; } /* Light Coral */
+.phrase:nth-child(9) { background-color: #FF677D; } /* Light Crimson */
+.phrase:nth-child(10) { background-color: #D5AAFF; } /* Light Purple */
+.phrase:nth-child(11) { background-color: #FFC3A0; } /* Light Apricot */
+.phrase:nth-child(12) { background-color: #FF6F61; } /* Pastel Tomato */
+.phrase:nth-child(13) { background-color: #C7CEEA; } /* Light Periwinkle */
+.phrase:nth-child(14) { background-color: #D0E6F9; } /* Light Sky Blue */
+.phrase:nth-child(15) { background-color: #FFB347; } /* Light Amber */
+.phrase:nth-child(16) { background-color: #FF6F61; } /* Light Tomato */
+.phrase:nth-child(17) { background-color: #FFD6E7; } /* Light Blush */
+.phrase:nth-child(18) { background-color: #FFE6CC; } /* Light Sand */
+.phrase:nth-child(19) { background-color: #F4D03F; } /* Light Lemon Yellow */
+.phrase:nth-child(20) { background-color: #D5E5B5; } /* Light Olive */
+.phrase:nth-child(21) { background-color: #F0B2B2; } /* Light Salmon Pink */
+.phrase:nth-child(22) { background-color: #A0D3E8; } /* Light Cyan */
+.phrase:nth-child(23) { background-color: #FFCAD4; } /* Pastel Cotton Candy */
+.phrase:nth-child(24) { background-color: #B5E8B1; } /* Light Mint */
+.phrase:nth-child(25) { background-color: #B3CDE0; } /* Light Steel Blue */
+.phrase:nth-child(26) { background-color: #FFFB7D; } /* Pastel Lemon */
+.phrase:nth-child(27) { background-color: #D1C8F8; } /* Pastel Lavender Mist */
+.phrase:nth-child(28) { background-color: #FFE1E4; } /* Light Rose Quartz */
+.phrase:nth-child(29) { background-color: #B2F2BB; } /* Light Emerald */
+.phrase:nth-child(30) { background-color: #F6D8AE; } /* Light Honey */
+.phrase:nth-child(31) { background-color: #D4C3E1; } /* Light Amethyst */
+.phrase:nth-child(32) { background-color: #F8E3B0; } /* Light Buttermilk */
+.phrase:nth-child(33) { background-color: #FFC4D1; } /* Light Petal Pink */
+.phrase:nth-child(34) { background-color: #D9EAD3; } /* Light Sage */
+.phrase:nth-child(35) { background-color: #E3B5F7; } /* Light Thistle */
+.phrase:nth-child(36) { background-color: #A7D3C7; } /* Light Teal */
+.phrase:nth-child(37) { background-color: #FFD4C6; } /* Light Apricot Blush */
+.phrase:nth-child(38) { background-color: #B7B7A4; } /* Light Stone */
+.phrase:nth-child(39) { background-color: #E9C7D3; } /* Light Rosy Pink */
+.phrase:nth-child(40) { background-color: #B8E3C2; } /* Light Moss Green */
+.phrase:nth-child(41) { background-color: #C3A8D6; } /* Light Lilac */
+.phrase:nth-child(42) { background-color: #FFE2E3; } /* Light Cotton Candy Pink */
+.phrase:nth-child(43) { background-color: #C9E6DA; } /* Light Seafoam */
+.phrase:nth-child(44) { background-color: #E8BFD0; } /* Light Flamingo Pink */
+.phrase:nth-child(45) { background-color: #D3E8D5; } /* Light Spring Green */
+.phrase:nth-child(46) { background-color: #F7D3A0; } /* Light Caramel */
+.phrase:nth-child(47) { background-color: #FFE6AB; } /* Light Gold */
+.phrase:nth-child(48) { background-color: #D1D1D1; } /* Light Gray */
+.phrase:nth-child(49) { background-color: #F8CBA6; } /* Light Peachy */
+.phrase:nth-child(50) { background-color: #F4B6F5; } /* Light Orchid */
+.phrase:nth-child(51) { background-color: #FFCCBC; } /* Light Orange */
+.phrase:nth-child(52) { background-color: #B5B3FF; } /* Light Periwinkle */
+.phrase:nth-child(53) { background-color: #F6EAB6; } /* Light Banana */
+.phrase:nth-child(54) { background-color: #D2D9A8; } /* Light Moss */
+.phrase:nth-child(55) { background-color: #FFE4C4; } /* Light Bisque */
+.phrase:nth-child(56) { background-color: #F1C2D7; } /* Light Watermelon */
+.phrase:nth-child(57) { background-color: #B3B8E2; } /* Light Lavender Blue */
+.phrase:nth-child(58) { background-color: #FFEC40; } /* Light Lemonade */
+.phrase:nth-child(59) { background-color: #F8B9A8; } /* Light Coral Pink */
+.phrase:nth-child(60) { background-color: #A2D5F2; } /* Light Sky */
+.phrase:nth-child(61) { background-color: #FFD9E0; } /* Light Pink Lemonade */
+.phrase:nth-child(62) { background-color: #FFDFD3; } /* Light Poppy */
+.phrase:nth-child(63) { background-color: #B5F8D4; } /* Light Mint Green */
+.phrase:nth-child(64) { background-color: #F0E68C; } /* Light Khaki */
+.phrase:nth-child(65) { background-color: #E4B5B5; } /* Light Rosewood */
+.phrase:nth-child(66) { background-color: #D6E0C8; } /* Light Honeydew */
+.phrase:nth-child(67) { background-color: #C9C3D6; } /* Light Heather */
+.phrase:nth-child(68) { background-color: #A6C8E0; } /* Light Azure */
+.phrase:nth-child(69) { background-color: #F7E7C7; } /* Light Cream */
+.phrase:nth-child(70) { background-color: #C4D6E5; } /* Light Baby Blue */
+.phrase:nth-child(71) { background-color: #FFB2D4; } /* Light Pink Pearl */
+.phrase:nth-child(72) { background-color: #FFDAC6; } /* Light Melon */
+.phrase:nth-child(73) { background-color: #A6D1B7; } /* Light Fern */
+.phrase:nth-child(74) { background-color: #F2D1D1; } /* Light Blush Pink */
+.phrase:nth-child(75) { background-color: #D4C8EA; } /* Light Lavender Gray */
+.phrase:nth-child(76) { background-color: #B2DFDB; } /* Light Teal Blue */
+.phrase:nth-child(77) { background-color: #E7B7B7; } /* Light Coral Red */
+.phrase:nth-child(78) { background-color: #F3C1BB; } /* Light Pink Salmon */
+.phrase:nth-child(79) { background-color: #FFC6C1; } /* Light Strawberry */
+.phrase:nth-child(80) { background-color: #B6EBD2; } /* Light Mint Cream */
+.phrase:nth-child(81) { background-color: #FFD3A5; } /* Light Pumpkin */
+.phrase:nth-child(82) { background-color: #B1E8F5; } /* Light Powder Blue */
+.phrase:nth-child(83) { background-color: #F6B1C2; } /* Light Peony */
+.phrase:nth-child(84) { background-color: #E3D7DA; } 
+.phrase:nth-child(85) { background-color: #FCE4EC; }   /* Pastel Pink */
+.phrase:nth-child(86) { background-color: #FFF9C4; }   /* Pastel Yellow */
+.phrase:nth-child(87) { background-color: #E0F2F1; }   /* Pastel Aqua */
+.phrase:nth-child(88) { background-color: #FFECB3; }   /* Light Pastel Orange */
+.phrase:nth-child(89) { background-color: #F3E5F5; }   /* Soft Lavender */
+.phrase:nth-child(90) { background-color: #E1F5FE; }   /* Pastel Blue */
+.phrase:nth-child(91) { background-color: #DCEDC8; }   /* Pastel Green */
+.phrase:nth-child(92) { background-color: #FFCCBC; }   /* Soft Peach */
+.phrase:nth-child(93) { background-color: #D7CCC8; }   /* Pastel Brown */
+.phrase:nth-child(94) { background-color: #FFCDD2; }   /* Pastel Rose */
+.phrase:nth-child(95) { background-color: #F8BBD0; }   /* Soft Blush Pink */
+.phrase:nth-child(96) { background-color: #E6EE9C; }   /* Pastel Lime */
+.phrase:nth-child(97) { background-color: #D1C4E9; }   /* Light Lavender */
+.phrase:nth-child(98) { background-color: #C5E1A5; }   /* Pale Green */
+.phrase:nth-child(99) { background-color: #FFECB3; }   /* Soft Yellow */
+.phrase:nth-child(100) { background-color: #B3E5FC; }  /* Pastel Sky Blue */
+
+.phrase:nth-child(101) { background-color: #D1C4E9; }
+.phrase:nth-child(102) { background-color: #FFCDD2; }
+.phrase:nth-child(103) { background-color: #F8BBD0; }
+.phrase:nth-child(104) { background-color: #D7CCC8; }
+.phrase:nth-child(105) { background-color: #DCEDC8; }
+.phrase:nth-child(106) { background-color: #F3E5F5; }
+.phrase:nth-child(107) { background-color: #FFECB3; }
+.phrase:nth-child(108) { background-color: #FFCCBC; }
+.phrase:nth-child(109) { background-color: #FFE0B2; }
+.phrase:nth-child(110) { background-color: #C5E1A5; }
+.phrase:nth-child(111) { background-color: #80CBC4; }
+.phrase:nth-child(112) { background-color: #B2EBF2; }
+.phrase:nth-child(113) { background-color: #B3E5FC; }
+.phrase:nth-child(114) { background-color: #81D4FA; }
+.phrase:nth-child(115) { background-color: #A5D6A7; }
+.phrase:nth-child(116) { background-color: #C8E6C9; }
+.phrase:nth-child(117) { background-color: #FFAB91; }
+.phrase:nth-child(118) { background-color: #FFF59D; }
+.phrase:nth-child(119) { background-color: #FFE082; }
+.phrase:nth-child(120) { background-color: #FF8A65; }
+.phrase:nth-child(121) { background-color: #E1BEE7; }
+.phrase:nth-child(122) { background-color: #FFCC80; }
+.phrase:nth-child(123) { background-color: #FFEB3B; }
+.phrase:nth-child(124) { background-color: #FFCA28; }
+.phrase:nth-child(125) { background-color: #FFD180; }
+.phrase:nth-child(126) { background-color: #FF7043; }
+.phrase:nth-child(127) { background-color: #FBE9E7; }
+.phrase:nth-child(128) { background-color: #E6EE9C; }
+.phrase:nth-child(129) { background-color: #C5CAE9; }
+.phrase:nth-child(130) { background-color: #C8BDBD; }
+.phrase:nth-child(131) { background-color: #FFECB3; }
+.phrase:nth-child(132) { background-color: #FFABAB; }
+.phrase:nth-child(133) { background-color: #FFDEB9; }
+.phrase:nth-child(134) { background-color: #FFF1AF; }
+.phrase:nth-child(135) { background-color: #D9B4E3; }
+.phrase:nth-child(136) { background-color: #B1C7FF; }
+.phrase:nth-child(137) { background-color: #B2FFA9; }
+.phrase:nth-child(138) { background-color: #D9FFD1; }
+.phrase:nth-child(139) { background-color: #A2E7FF; }
+.phrase:nth-child(140) { background-color: #FFDBDB; }
+.phrase:nth-child(141) { background-color: #E0F7FA; }
+.phrase:nth-child(142) { background-color: #F1F8E9; }
+.phrase:nth-child(143) { background-color: #F0F4C3; }
+.phrase:nth-child(144) { background-color: #FFE082; }
+.phrase:nth-child(145) { background-color: #FFF176; }
+.phrase:nth-child(146) { background-color: #AED581; }
+.phrase:nth-child(147) { background-color: #FF8A80; }
+.phrase:nth-child(148) { background-color: #F9FBE7; }
+.phrase:nth-child(149) { background-color: #D1C4E9; }
+.phrase:nth-child(150) { background-color: #E3F2FD; }
+.phrase:nth-child(151) { background-color: #FF8F00; }
+.phrase:nth-child(152) { background-color: #F4FF81; }
+.phrase:nth-child(153) { background-color: #76FF03; }
+.phrase:nth-child(154) { background-color: #F0F0F0; }
+
+
+
+.message {
+    font-family: 'Dancing Script', cursive; /* Different font for the message */
+    font-size: 50px; /* Larger font size for the message */
+    margin-top: 20px;
+    color: #311717;
+}
+
+.next-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0c0006; /* Button color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px
+}
