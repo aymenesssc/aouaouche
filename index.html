@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Romantique</title>
+    <style>
+        /* Import the font used in the design */
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffd6e8; /* Pinkish background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('Red\ And\ Green\ Simple\ How\ To\ Grow\ Roses\ YouTube\ Thumbnail.png'); /* Floral background */
+            background-size: cover;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            width: 100%;
+            max-width: 800px;
+            background-color: rgba(221, 213, 213, 0.705); /* Transparent white background */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            color: #c70039; /* Deep red color */
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #900c3f; /* Darker pink color */
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background-color: #ff4d4d; /* Vivid red button */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff6666; /* Slightly lighter red on hover */
+        }
+
+        /* Rose images on the sides */
+        .roses-left, .roses-right {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 120px;
+            height: auto;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .roses-left {
+            left: 10px; /* Adjusted to ensure visibility */
+            background-image: url('https://www.pngmart.com/files/22/Red-Rose-Transparent-PNG.png');
+        }
+
+        .roses-right {
+            right: 10px; /* Adjusted to ensure visibility */
+            background-image: url('https://www.pngmart.com/files/1/Rose-PNG-Image.png');
+        }
+
+        /* Responsive styles for mobile screens like iPhone 11 */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .button {
+                font-size: 1.2rem;
+                padding: 10px 20px;
+            }
+
+            .roses-left, .roses-right {
+                width: 80px;
+                left: 5px;
+                right: 5px;
+                top: 10%;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="roses-left"></div>
+    <div class="roses-right"></div>
+
+    <div class="container">
+        <h1>Bienvenue sur ma page damour</h1>
+        
+        <button class="button" onclick="window.location.href='nextpage.html'">.......</button>
+    </div>
+</body>
+</html>
